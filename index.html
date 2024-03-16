@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TEMOTTS</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30955754-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">SelectTTS: Synthesizing anyone's voice via unit-based frame selection of self-supervised features</h1>
+        <p class="header"></p>
+        <ul>
+          <!-- <li class="download"><a class="buttons" href="https://github.com/harrisonford/awesome/zipballmus/master">Download ZIP</a></li> -->
+          <!-- <li class="download"><a class="buttons" href="https://github.com/harrisonford/awesome/tarball/master">Download TAR</a></li> -->
+          <!-- <li><a class="buttons github" href="http://github.com/harrisonford/awesome">View On GitHub</a></li> -->
+        </ul>
+        <!-- <p class="header">This project is maintained by <a class="header name" href="https://github.com/styleMoE">Anonymous monkey</a></p> -->
+      </header>
+      <section>
+<h2>SelectTTS: Synthesizing anyone's voice via unit-based frame selection of self-supervised features</h2>
+<p><font size="+1">Authors : Anonymous</font></p>
+<!-- <p style="color:red;"><a href="https://labs.utdallas.edu/sml/">Speech and Machine learning lab - The University of Texas at Dallas</a></p> -->
+<p>Submitted to Interspeech 2024. Codes will released after acceptance.</p>
+<h2>Abstract</h2>
+Synthesizing the voices of unseen speakers is a persisting challenge in multispeaker text-to-speech (TTS) systems. Most end-to-end multispeaker TTS models rely on incorporating speaker characteristics through speaker conditioning during training. Modeling unseen speaker attributes through this approach has necessitated an increase in model complexity, which makes it challenging to reproduce results and improve upon them.
+    We design a simple alternative to this. We propose SelectTTS, a novel method to select the appropriate frames from the target speaker and decode using frame-level self-supervised learning (SSL) features. We show that this approach can effectively capture speaker characteristics for unseen speakers, and achieves comparable results to other multispeaker-TTS frameworks in both objective and subjective metrics. With SelectTTS, we show that frame selection from the target speaker's speech is a direct way to achieve generalization in unseen speakers
+<h2> Model Architecture</h2>
+          <br />
+                    <img src="SelectTTS_v2.jpg"  width="950" height="310" / > <p>
+                      <figcaption style="terx-align:center;"></font><font size=3> 
+                        Select-TTS
+                      </figcaption><br>
+
+                   
+                  <div class="big-screen">
+<!-- <h3> Baselines and Datasets </h3>
+<p>Baselines : Fastspeech2 </p> -->
+
+<h3>Let's test the voice quality!</h3>
+<table>
+  <tbody><tr>
+    <th> </th><th>Ground truth</th>MS-DU TTS<th>YourTTS [1]</th><th>Select-TTS</th>
+  </tr>
+  <tr>
+    
+      <td>
+        1.
+      </td>
+      <td>
+      <audio controls>
+        <source src="website-main/I_am_feeling_sad_.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls>
+        <source src="website-main/I_am_feeling_sad_.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls>
+        <source src="website-main/I_am_feeling_sad_.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls>
+        <source src="website-main/I_am_feeling_sad_.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+ 
+  
+</tbody></table>
+
+<h3> References </h3>
+<p>[1] YourTTS: Towards Zero-Shot Multi-Speaker TTS and Zero-Shot Voice Conversion for everyone</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com/">GitHub Pages</a> using the <a href="https://github.com/broccolini/dinky">Dinky theme</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
