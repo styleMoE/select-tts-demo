@@ -1,0 +1,6 @@
+TEMOTTS: TEXT-AWARE EMOTIONAL TEXT-TO-SPEECH SYNTHESIS WITHOUT EMOTION LABELS
+
+Many frameworks for emotional Text-to-Speech (E-TTS) rely on human-annotated emotion labels that are often inaccurate and difficult to obtain. 
+Learning emotional prosody implicitly presents challenges due to the subjective nature of emotions and the hierarchical structure of speech. In this study, we propose a novel approach that leverages text awareness to acquire emotional styles without the need for explicit emotion labels. We present TEMOTTS, a two-stage framework for E-TTS that is trained without emotion labels and is capable of inference without auxiliary inputs. Our proposed method performs knowledge transfer between the linguistic space learned by BERT and the emotional style space constructed by global style tokens. Our experimental results demonstrate the effectiveness of our proposed framework in comparison to baselines, showcasing improvements in emotional accuracy, naturalness, and intelligibility. This is one of the first studies to leverage the emotional correlation between spoken content and expressive delivery for emotional TTS.
+
+Submitted to Speaker Odyssey 2024. Codes will be released after acceptance.
